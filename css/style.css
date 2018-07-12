@@ -6,13 +6,13 @@
 /* row_1 */
 #row_1 {text-align: center;}
 #row_1 img {width: 90%;}
+#row_1 span {position: absolute; display:block; bottom:10%; left:50%; transform: translateX(-50%); font-size: 20px; font-family: 'Nanum Gothic', sans-serif; font-weight: bolder;}
 /* row_2 */
 #row_2 {margin-top: 300px; text-align: center;}
 #row_2 img {width: 250px;}
-#row_2 span {font-size: 28px; font-family:"Maplestory Light", 'Hi Melody'; line-height: 80px;vertical-align: bottom; color: #ab2bfa;}
+#row_2 span {font-size: 28px; font-family:"Maplestory Light", 'Hi Melody'; line-height: 80px; vertical-align: bottom; color: #ab2bfa;}
 /* row_3 */
 #row_3 {margin-top: 500px;}
-.extend {height: 170px;}
 .project {height: 170px; padding: 0; transition: all 0.5s;}
 .project > div {position:relative; width: 100%; height: 100%;}
 .project > div:hover {background: #f6f6f6;}
@@ -20,53 +20,16 @@
 .project div > span {display: block; padding-top: 30px; margin-left: 25%; font-weight: bolder; font-size: 40px; color:#000; background: none;}
 .project div p {margin-left: 25%; width: 800px;}
 .project div p span:nth-child(1) {display:block; margin-bottom: 10px; font-size:16px; letter-spacing: -1px; color:#888; background: none;}
+.plus-to-minus {position: absolute; top: 50px; right: 25%; width: 60px; height: 60px; cursor: pointer; transition: -webkit-transform ease 400ms; transition: transform ease 400ms; transition: transform ease 400ms, -webkit-transform ease 400ms;}
+.plus-to-minus:before, .plus-to-minus:after { content: ""; position: absolute; background-color: #666; border-radius: 10px;}
+/*세로*/
+.plus-to-minus:before { left: 50%; margin-left: -2px; width: 4px; height: 60px;}
+/*가로*/
+.plus-to-minus:after { top: 50%; margin-top: -2px; height: 4px; width: 60px; transition: -webkit-transform ease 400ms; transition: transform ease 400ms; transition: transform ease 400ms, -webkit-transform ease 400ms;}
+.plus-to-minus.minus { -webkit-transform: rotate(-90deg); transform: rotate(-90deg);}
+.plus-to-minus.minus:after { -webkit-transform: rotate(-90deg); transform: rotate(-90deg);}
 /* row_4 */
 #row_4 {margin-top: 50px; margin-bottom: 50px;}
 #row_4 img {width: 100px;}
 #row_4 span {display: block; font-size: 25px; font-family: 'Black Han Sans', sans-serif;}
 #row_4 span a{font-size: 20px;}
-
-
-
-.plus-to-minus {
-    position: absolute;
-    top: 50px;
-    right: 25%;
-  width: 60px;
-  height: 60px;
-  cursor: pointer;
-  transition: -webkit-transform ease 400ms;
-  transition: transform ease 400ms;
-  transition: transform ease 400ms, -webkit-transform ease 400ms;
-}
-.plus-to-minus:before, .plus-to-minus:after {
-  content: "";
-  position: absolute;
-  background-color: #666;
-  border-radius: 10px;
-}
-/*세로*/
-.plus-to-minus:before {
-  left: 50%;
-  margin-left: -2px;
-  width: 4px;
-  height: 60px;
-}
-/*가로*/
-.plus-to-minus:after {
-  top: 50%;
-  margin-top: -2px;
-  height: 4px;
-  width: 60px;
-  transition: -webkit-transform ease 400ms;
-  transition: transform ease 400ms;
-  transition: transform ease 400ms, -webkit-transform ease 400ms;
-}
-.plus-to-minus.minus {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-}
-.plus-to-minus.minus:after {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-}
