@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
 @font-face{font-family:"Maplestory Light"; src:url("../fonts/Maplestory-Light.woff")}
+@font-face{font-family:"LemonMilk"; src:url("../fonts/LemonMilk.otf")}
 .content_row {display: none;}
 /* row_1 */
 #row_1 {text-align: center;}
@@ -15,9 +15,11 @@
 .project {position:relative; height: 170px; padding: 0; transition: all 0.5s;}
 .project:hover {background: #f6f6f6;}
 .project span {display: inline-block; margin-right:1px; padding: 0 7px; border-radius: 10px; font-family: 'Nanum Gothic', sans-serif; color:#fff; background: #ab2bfa; font-size: 12px;}
-.project > span {display: block; padding-top: 30px; margin-left: 25%; font-weight: bolder; font-size: 40px; color:#000; background: none;}
-.project > p {margin-left: 25%; width: 800px;}
+.project > span {display: block; padding-top: 30px; margin-left: 20%; font-weight: bolder; font-size: 40px; color:#000; background: none;}
+.project > p {margin-left: 20%; width: 800px;}
 .project > p span:nth-child(1) {display:block; margin-bottom: 10px; font-size:16px; letter-spacing: -1px; color:#888; background: none;}
+.project > p span:nth-child(2) {margin-left: 5px;}
+.project .period {display:block; margin-top: 10px; font-size:13px; letter-spacing: -1px; color:#000; background: none;}
 .plus-to-minus {position: absolute; top: 50px; right: 25%; width: 60px; height: 60px; cursor: pointer; transition: -webkit-transform ease 400ms; transition: transform ease 400ms; transition: transform ease 400ms, -webkit-transform ease 400ms;}
 .plus-to-minus:before, .plus-to-minus:after { content: ""; position: absolute; background-color: #666; border-radius: 10px;}
     /*세로*/
@@ -27,18 +29,24 @@
 .plus-to-minus.minus { -webkit-transform: rotate(-90deg); transform: rotate(-90deg);}
 .plus-to-minus.minus:after { -webkit-transform: rotate(-90deg); transform: rotate(-90deg);}
     /* detail */
-.detail {display:none; text-align: center;}
-.detail .main_img {width: 70%; margin: 10px auto;}
-.detail button {width: 100%; height:50px; margin: 50px auto; border-radius: 10px; background-color: #ab2bfa; font-size: 20px; color: #fff;}
-.detail .period span {display: block; margin: 0; padding: 0; font-family:"Maplestory Light", 'Hi Melody'; color:#000; background: none; font-size: 26px;}
-.detail .period span:nth-child(2) {margin-bottom: 20px;}
-.detail .project_img {border: 2px solid #969696; padding: 2px;}
-.detail p {display:block; height: 300px; padding-top: 50px;}
-.detail span {display: block; margin: 0; padding: 0; font-family:"Maplestory Light", 'Hi Melody'; color:#000; background: none; font-size: 18px;text-align: left;}
+.detail {display:none;}
+.detail button {width: 100%; height:50px; margin: 50px auto 0px auto; border: none; border-radius: 10px; background-color: #ab2bfa; font-size: 20px; color: #fff;}
+.detail .period {display:block; margin-bottom: 50px; font-size:13px; font-family: 'Nanum Gothic', sans-serif; letter-spacing: -1px; color:#000; text-align: center; background: none;}
+.detail .project_img {border: 2px solid #969696; padding: 1px;}
+.detail p {display:block; height: 350px;}
+.detail p .far {width: 30px; font-size: 18px; color: #ab2bfa;}
+.detail span {display: inline-block; margin: 0; margin-bottom: 20px; padding: 0; font-family:"Maplestory Light", 'Hi Melody'; color:#444; background: none; font-size: 18px; text-align: left;}
+.detail span:nth-child(1) {font-size: 32px; color:#000;} 
 /* row_4 */
 #row_4 {margin-top: 50px; margin-bottom: 50px;}
 #row_4 img {width: 100px;}
-#row_4 span {display: block; font-size: 25px; font-family: 'Black Han Sans', sans-serif;}
-#row_4 span a{font-size: 20px;}
+#row_4 span:nth-child(1) {display: block; font-size: 32px; color: #ab2bfa;}
+#row_4 span:nth-child(2) {display: block; font-size: 12px; color: #a6a6a6;}
+#row_4 .fas {width: 30px; font-size:20px; color: #ab2bfa; text-align: center;}
+#row_4 span {display: inline-block; margin-top: 10px;font-size: 16px; font-family:"LemonMilk";}
+#row_4 span a{font-size: 16px; color:#fff;}
+#row_4 span a button {width: 200px; height: 50px; border: none;}
+#row_4 span a #github {background: #666;}
+#row_4 span a #blog {background: #ab2bfa;}
 
 
