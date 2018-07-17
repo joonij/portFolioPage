@@ -19,7 +19,6 @@
 .project > p {margin-left: 20%; width: 800px;}
 .project > p span:nth-child(1) {display:block; margin-bottom: 10px; font-size:16px; letter-spacing: -1px; color:#888; background: none;}
 .project > p span:nth-child(2) {margin-left: 5px;}
-.project .period {display:block; margin-top: 10px; font-size:13px; letter-spacing: -1px; color:#000; background: none;}
 .plus-to-minus {position: absolute; top: 50px; right: 25%; width: 60px; height: 60px; cursor: pointer; transition: -webkit-transform ease 400ms; transition: transform ease 400ms; transition: transform ease 400ms, -webkit-transform ease 400ms;}
 .plus-to-minus:before, .plus-to-minus:after { content: ""; position: absolute; background-color: #666; border-radius: 10px;}
     /*세로*/
@@ -50,3 +49,7 @@
 #row_4 span a #blog {background: #ab2bfa;}
 
 
+@media all and (max-width: 1020px) {
+    .project > p {width: 500px;}
+    .plus-to-minus { right: 85%;}
+}
