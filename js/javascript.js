@@ -13,8 +13,9 @@ $(document).ready(function(){
             $(this).parent().css("height","auto");
             $(this).siblings(".detail").fadeIn(500);
         } else {
-            $(this).parent().css("height","170px");
-            $(this).siblings(".detail").fadeOut(100);
+            $(this).siblings(".detail").fadeOut(200, function(){
+                $(this).parent().css("height","170px");
+            });
         }
 	});
 });
