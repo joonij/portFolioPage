@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
 @font-face{font-family:"Maplestory Light"; src:url("../fonts/Maplestory-Light.woff")}
 @font-face{font-family:"LemonMilk"; src:url("../fonts/LemonMilk.otf")}
-.content_row {display: none;}
+.row {display: none;}
 /* row_1 */
 #row_1 {position: relative; top: 50px; text-align: center;}
-#row_1 img {width: 70%;}
+#main_img {width: 70%;}
+#main_text {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 20%; display: none;}
 #row_1 span {position: absolute; display:block; bottom:0%; left:50%; transform: translateX(-50%); font-size: 20px; font-family: 'Nanum Gothic', sans-serif; font-weight: bolder; letter-spacing: 3px;}
 /* row_2 */
 #row_2 {position: relative; overflow: hidden;}
-/* #row_2 img {width: 250px;} */
 #row_2 .col-md-12 {padding: 0;}
 #row_2 img {position: relative; width: 100%;}
 /* row_3 */
@@ -51,7 +51,8 @@
 
 
 @media all and (max-width: 1020px) {
-    #row_1 img {width: 90%;}
+    #main_img {width: 90%;}
+    #main_text {width: 20%;}
     #row_1 span {font-size: 16px;}
     #row_2 img {width: 200%; left: 65%; transform: translateX(-50%);}
     .project > span {margin-left: 10%; font-size: 35px;}

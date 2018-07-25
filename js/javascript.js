@@ -1,10 +1,12 @@
 $(document).ready(function(){
     // Start
-    $(".content_row").fadeIn(2000);
+    $(".row").fadeIn(1000, function(){
+        $("#main_text").fadeIn(250);
+    });
     //Scroll Down
     $(window).scroll(function(){
         var scrollValue = $(document).scrollTop();
-        (scrollValue >= 400) ? $("#row_1 span").fadeOut("1000") : $("#row_1 span").fadeIn("1000");
+        (scrollValue >= 200) ? $("#row_1 span").fadeOut("1000") : $("#row_1 span").fadeIn("1000");
     });
     // Click Plus to Minus
 	$( '.plus-to-minus' ).click(function(event){
