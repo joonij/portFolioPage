@@ -20,12 +20,12 @@
 .project > p {margin-left: 20%; width: 800px;}
 .project > p span:nth-child(1) {display:block; margin-bottom: 10px; font-size:16px; letter-spacing: -1px; color:#888; background: none;}
 .project > p span:nth-child(2) {margin-left: 5px;}
-.plus-to-minus {position: absolute; top: 50px; right: 25%; width: 60px; height: 60px; cursor: pointer; transition: -webkit-transform ease 400ms; transition: transform ease 400ms; transition: transform ease 400ms, -webkit-transform ease 400ms;}
+.plus-to-minus {position: absolute; top: 50px; right: 25%; width: 60px; height: 60px; cursor: pointer; transition: -webkit-transform ease 400ms; transition: transform ease 400ms;}
 .plus-to-minus:before, .plus-to-minus:after { content: ""; position: absolute; background-color: #666; border-radius: 10px;}
     /*세로*/
 .plus-to-minus:before { left: 50%; margin-left: -2px; width: 4px; height: 60px;}
     /*가로*/
-.plus-to-minus:after { top: 50%; margin-top: -2px; height: 4px; width: 60px; transition: -webkit-transform ease 400ms; transition: transform ease 400ms; transition: transform ease 400ms, -webkit-transform ease 400ms;}
+.plus-to-minus:after { top: 50%; margin-top: -2px; height: 4px; width: 60px; transition: -webkit-transform ease 400ms; transition: transform ease 400ms;}
 .plus-to-minus.minus { -webkit-transform: rotate(-90deg); transform: rotate(-90deg);}
 .plus-to-minus.minus:after { -webkit-transform: rotate(-90deg); transform: rotate(-90deg);}
     /* detail */
@@ -36,7 +36,9 @@
 .detail p {display:block; height: 350px;}
 .detail p .far {width: 30px; font-size: 18px; color: #ab2bfa;}
 .detail span {display: inline-block; margin: 0; margin-bottom: 20px; padding: 0; font-family:"Maplestory Light", 'Hi Melody'; color:#444; background: none; font-size: 18px; text-align: left;}
-.detail span:nth-child(1) {font-size: 32px; color:#000;} 
+.detail span:nth-child(1) {font-size: 32px; color:#000;}
+#connect_1 {margin-bottom: 0;}
+#connect_2 {margin-left: 35px;}
 /* row_4 */
 #row_4 {position: relative; top: -50px;}
 #row_4 img {width: 100px;}
